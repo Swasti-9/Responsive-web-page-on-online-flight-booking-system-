@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sky Linker</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/strategy-management/512/paper-plane-64.png">
+  <style>
+      
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://www.blumenbecker.com/fileadmin/_processed_/6/1/csm_Mumbai-Skyline_e0dbb19198.jpg')
+    }
+    
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    select {
+      appearance: none;
+      background: transparent url('dropdown-arrow.png') no-repeat right center;
+      background-size: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+ <!---
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+--->
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Flight Booking</h1>
+    <form action="submit_booking.php" method="post">
+     <label for="cities">Departure City:</label>
+<select id="destinations" name="cities" size="4" multiple>
+  <option value="New York">New York</option>
+  <option value="Seoul">Seoul</option>
+  <option value="Paris">Paris</option>
+  <option value="London">London</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Tokyo">Tokyo</option>
+  <option value="Toronto">Toronto</option>
+</select>
+    
+
+    
+
+     <label for="to">Destination City:</label>
+ <select id="destinations" name="cities" size="4" multiple>
+        <option value="New York">New York</option>
+        <option value="Seoul">Seoul</option>
+        <option value="Paris">Paris</option>
+        <option value="London">London</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Toronto">Toronto</option>
+ </select>
+
+      <label for="departure">Departure Date:</label>
+      <input type="date" id="departure" name="departure" required>
+      
+      <label for="return">Return Date:</label>
+      <input type="date" id="return" name="return">
+      
+      <label for="passengers">Number of Passengers:</label>
+      <input type="number" id="passengers" name="passengers" min="1" required>
+      
+      <label for="class">Class:</label>
+      <select id="class" name="class">
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+        <option value="first">First Class</option>
+      </select>
+       <a href="skylinker3.html">
+      <input type="submit" value="Search Flight">
+    </form>
+  </div>
+</body>
+</html>
