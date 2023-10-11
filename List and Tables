@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Available Flights</h1>
+
+    <label for="departure-city">Departure City:</label>
+    <select id="departure-city">
+        <option value="Jaipur">Jaipur</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai C</option>
+        <option value="Delhi">Delhi</option>
+    </select>
+
+    <label for="destination-city">Destination City:</label>
+    <select id="destination-city">
+        <option value="Srinagar">Srinagar</option>
+        <option value="Cochin">Cochin</option>
+        <option value="Ladakh">Ladakh</option>
+        <option value="Aurangabad">Aurangabad</option>
+    </select>
+
+    <table>
+        <tr>
+            <th>Flight Number</th>
+            <th>Airline</th>
+            <th>Departure</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>FL123</td>
+            <td>Airline A</td>
+            <td>Pune</td>
+            <td>Ladakh</td>
+            <td>10:00 AM</td>
+            <td>01:00 PM</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>FL456</td>
+            <td>Airline B</td>
+            <td>Jaipur</td>
+            <td>Srinagar</td>
+            <td>02:30 PM</td>
+            <td>05:45 PM</td>
+            <td>$180</td>
+        </tr>
+<tr>
+            <td>FL456</td>
+            <td>Airline B</td>
+            <td>Mumbai</td>
+            <td>Cochin</td>
+            <td>01:30 AM</td>
+            <td>03:45 AM</td>
+            <td>$150</td>
+        </tr>
+<tr>
+            <td>FL456</td>
+            <td>Airline B</td>
+            <td>Delhi</td>
+            <td>Aurangabad</td>
+            <td>02:00 PM</td>
+            <td>03:45 PM</td>
+            <td>$280</td>
+        </tr>
+    </table>
+
+    <h2>Available Options:</h2>
+    <ul>
+        <li>Select departure and destination cities from the dropdown menus above.</li>
+        <li>Select a flight from the table above.</li>
+        <li>Fill in passenger details and payment information.</li>
+        <li>Review your booking and confirm the payment.</li>
+        <li>Receive booking confirmation and flight details via email.</li>
+    </ul>
+</body>
+
+</html>
